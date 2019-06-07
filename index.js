@@ -6,12 +6,12 @@ function takeANumber (deliLineArray, name) {
   return welcomeMessage;
 } 
 
-var lastestTicket = 101;
+var lastestTicket = 0;
 
 // Let the latest customer know what ticket they've gotten
 function takeANumber () {
   latestTicket++
-  return latestTicket
+  return `Welcome! You have ticket number ${latestTicket}.`;
 }
 
 
