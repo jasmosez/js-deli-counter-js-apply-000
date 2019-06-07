@@ -9,8 +9,9 @@ function takeANumber (deliLineArray, name) {
 var lastestTicket = 0;
 
 // Let the latest customer know what ticket they've gotten
-function takeANumber () {
-  latestTicket++
+function takeANumber (deliLineArray) {
+  latestTicket++;
+  deliLineArray.push(latestTicket);
   return `Welcome! You have ticket number ${latestTicket}.`;
 }
 
