@@ -6,6 +6,16 @@ function takeANumber (deliLineArray, name) {
   return welcomeMessage;
 } 
 
+var lastestTicket = 101;
+
+// Let the latest customer know what ticket they've gotten
+function takeANumber () {
+  latestTicket++
+  return latestTicket
+}
+
+
+
 function nowServing (deliLineArray) {
   if (deliLineArray.length === 0) { 
     return "There is nobody waiting to be served!";
