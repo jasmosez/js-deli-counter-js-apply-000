@@ -10,11 +10,7 @@ function nowServing (deliLineArray) {
   if (deliLineArray.length === 0) { 
     return "There is nobody waiting to be served!";
   } else {
-    var firstInLine = deliLineArray[0];
-    
-    // The shift() method removes the first array element and "shifts" all other elements to a lower index.
-    deliLineArray.shift();
-    return `Currently serving ${firstInLine}.`;
+    return `Currently serving ${deliLineArray.shift()}.`;
   }
 }
 
